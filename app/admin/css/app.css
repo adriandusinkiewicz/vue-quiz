@@ -1,0 +1,193 @@
+
+#postbox-container-1 {
+  display: none;
+}
+#vue-quiz {
+  max-width: 680px;
+  margin: 0 auto 40px auto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3F4042;
+}
+#vue-quiz .loading {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+#vue-quiz .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#vue-quiz .buttons.center {
+      justify-content: center;
+}
+#vue-quiz .questions .image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#vue-quiz .questions .image-wrapper .image-buttons {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+}
+#vue-quiz .questions .image-wrapper .image-buttons .main-button {
+        margin: 0 5px;
+}
+#vue-quiz .questions .title {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 10px 0px;
+}
+#vue-quiz .questions .question {
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px solid #A4A5A8;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#vue-quiz .questions .question .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+}
+#vue-quiz .questions .question .answers {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+}
+#vue-quiz .questions .question .answers .number {
+        width: 30px;
+        padding: 5px;
+        text-align: center;
+}
+#vue-quiz .questions .question .input {
+      width: 100%;
+}
+#vue-quiz .questions .question .input input {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 1px solid #A4A5A8;
+}
+#vue-quiz .questions .question .input textarea {
+        width: 100%;
+        min-height: 80px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 1px solid #A4A5A8;
+}
+#vue-quiz .questions .question .checkbox {
+      margin-left: 10px;
+      margin-right: 10px;
+}
+#vue-quiz .questions .question .checkbox input {
+        display: none;
+}
+#vue-quiz .questions .question .checkbox input:checked + .value-box {
+        background: #ACE525;
+}
+#vue-quiz .questions .question .checkbox input:checked + .value-box:before {
+          content: "\2713";
+}
+#vue-quiz .questions .question .checkbox .value-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: #FF1933;
+        color: #FFFFFF;
+}
+#vue-quiz .save {
+    margin: 40px 0 20px 0;
+}
+#vue-quiz .save button {
+      width: 100%;
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all 1s;
+}
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+#vue-quiz .main-button {
+  border-radius: 10px;
+  padding: 8px 15px;
+  background: #0080FF;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: medium;
+  border: 1px solid #96C5CB;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#vue-quiz .main-button.green {
+    background: #ACE525;
+}
+#vue-quiz .main-button.red {
+    background: #FF1933;
+}
+#vue-quiz .main-button:active {
+    box-shadow: inset 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#vue-quiz .main-button:hover {
+    transform: scale(1.02);
+}
+
+#vue-quiz .toast {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  right: 0;
+  width: 200px;
+  margin-left: -100px;
+  padding: 20px;
+  background: green;
+  color: white;
+  border-radius: 10px;
+  z-index: 100;
+  text-align: center;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+#vue-quiz .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgrey;
+  min-height: 400px;
+}
+#vue-quiz .image {
+  width: 100%;
+  min-height: 400px;
+  background: lightgrey;
+}
+#vue-quiz .image img {
+    display: block;
+    max-width: 100%;
+}

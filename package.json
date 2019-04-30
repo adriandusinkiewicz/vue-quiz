@@ -1,0 +1,28 @@
+{
+  "name": "vuequiz",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
+}

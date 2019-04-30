@@ -1,0 +1,100 @@
+
+.vue-quiz .image {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.vue-quiz .image .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgrey;
+    min-height: 400px;
+}
+.vue-quiz .image img {
+    display: block;
+}
+
+.vue-quiz .main-button {
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: #0548D8;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: medium;
+  border: 1px solid #96C5CB;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.vue-quiz .main-button.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.vue-quiz .main-button.green {
+    background: #ACE525;
+}
+.vue-quiz .main-button.red {
+    background: #FF1933;
+}
+.vue-quiz .main-button:active {
+    box-shadow: inset 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.vue-quiz .main-button:hover {
+    transform: scale(1.02);
+}
+
+.vue-quiz .results .results-text {
+  font-size: 20px;
+  line-height: 26px;
+}
+.vue-quiz .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.vue-quiz .questions .question {
+  border: 1px solid #3F4042;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.vue-quiz .questions .question .question-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.vue-quiz .questions .question .next-btn {
+    margin-top: 20px;
+    text-align: right;
+}
+.vue-quiz .questions .question .answers .answer {
+    margin: 0;
+    padding: 0;
+}
+.vue-quiz .questions .question .answers .answer input[type="radio"] {
+      display: none;
+}
+.vue-quiz .questions .question .answers .answer .text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #3F4042;
+      background: #EEF4F2;
+}
+.vue-quiz .questions .question .answers .answer .text.correct {
+        background: #ACE525;
+}
+.vue-quiz .questions .question .answers .answer .text.wrong {
+        background: #FF1933;
+}
+.vue-quiz .questions .question .answers .answer input[type="radio"]:checked + .text {
+      color: white;
+      background: #0080FF;
+      font-style: normal;
+}
